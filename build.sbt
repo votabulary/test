@@ -9,7 +9,9 @@ scalaVersion  := "2.10.3"
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
 resolvers ++= Seq(
-  "spray repo" at "http://repo.spray.io/"
+  "spray repo" at "http://repo.spray.io/",
+  "sbt plugins snapshots" at "http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases",
+  "sbt plugins releases" at "http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases"
 )
 
 libraryDependencies ++= Seq(
