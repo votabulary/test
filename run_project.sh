@@ -2,7 +2,7 @@
 
 PID=$(ps -Af | grep "java -jar" | grep -v grep | awk '{print $2}')
 DEPLOY_TO="/opt/votabulary";
-ASSEMBLY=$(ls $WORKSPACE/target/scala-*/*-assembly-*.jar);
+ASSEMBLY=$(ls target/scala-*/*-assembly-*.jar);
 
 if [ -z "$PID" ]; then
    sudo kill -9 $PID
